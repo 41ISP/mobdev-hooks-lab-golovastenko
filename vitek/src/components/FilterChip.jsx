@@ -1,13 +1,18 @@
-const FilterChip = () => {
-    return (
-        <div className="filter-chip">
-            <input type="checkbox" id="filterCheckbox" />
-            <label htmlFor="filterCheckbox">
-                <span className="dot" />
-                Только непрочитанные
-            </label>
-        </div>
-    )
+const FilterChip = ({ checked, onChange }) => {
+  return (
+    <div className="filter-chip">
+      <input
+        type="checkbox"
+        id="filterCheckbox"
+        checked={checked}
+        onChange={onChange}
+      />
+      <label htmlFor="filterCheckbox">
+        <span className="dot" />
+        Только непрочитанные
+      </label>
+    </div>
+  )
 }
 
 export default FilterChip
