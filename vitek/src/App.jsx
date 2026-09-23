@@ -11,6 +11,7 @@ const App = () => {
       id: nanoid(),
       title,
       read: false,
+      // Изменения
     }
     setBooks((prevBooks) => [...prevBooks, newBook])
   }
